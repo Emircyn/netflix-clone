@@ -1,4 +1,4 @@
-# Movie App
+# Netflix Clone
 
 <p align="center">
   <img alt='Screenshot 1' src="assets/screenshot1.png" width="40%"/>
@@ -13,7 +13,9 @@
 
 ## Install ##
 
-    $ echo "sdk.dir=YOUR_SDK_DIR" > local.properties
+    $ npm install
+## And ##
+    $ npm run dev
 
 
     
