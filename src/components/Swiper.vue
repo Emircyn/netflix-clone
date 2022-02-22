@@ -24,8 +24,8 @@
                     <p class="content" v-if="typeFilm=='tv'">{{item.name}}</p>
                 </div>
                 <div class="swiper-button">
-                  <RouterLink v-if="typeFilm=='movie'"  class="button-rounded"  :to="movieDetailsPath()+item.id" ><i class='bx bx-play' ></i></RouterLink>
-                    <RouterLink v-if="typeFilm=='tv'"  class="button-rounded"  :to="movieDetailsPath()+item.id" ><i class='bx bx-play' ></i></RouterLink>
+                  <RouterLink v-if="typeFilm=='movie'"  class="button-rounded"  :to="movieDetailsPath()+item.id" ><i class='bx bx-info-circle' ></i></RouterLink>
+                    <RouterLink v-if="typeFilm=='tv'"  class="button-rounded"  :to="movieDetailsPath()+item.id" ><i class='bx bx-info-circle' ></i></RouterLink>
                 </div>
                 <div class="swiper-content-bottom">
                   <div class="left-side">
@@ -95,7 +95,7 @@ export default {
           trend:'/'+this.typeDiscover+'/'+this.typeFilm+'/week?',
           discoverUrl:'/'+this.typeDiscover+'/'+this.typeFilm+'?',
            baseUrl:'https://api.themoviedb.org/3',
-           apiKey:'api_key=2f0516d4c4cae0ead0b0ee842e6c6da4',
+          apiKey:'api_key='+import.meta.env.VITE_APP_API_KEY,
            load:true,
          
            imagesUrl:'https://image.tmdb.org/t/p/original',

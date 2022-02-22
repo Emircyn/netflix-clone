@@ -91,7 +91,7 @@ export default {
            link:null,
            cast:[],
             baseUrl:'https://api.themoviedb.org/3',
-           apiKey:'api_key=2f0516d4c4cae0ead0b0ee842e6c6da4',
+           apiKey:'api_key='+import.meta.env.VITE_APP_API_KEY,
             imagesUrl:'https://image.tmdb.org/t/p/original',  
           swiperOptions: {
               breakpoints: {    
@@ -179,7 +179,7 @@ export default {
                         
                   this.videos=response.data.results;
                   this.picker();
-                  this.link='https://www.youtube.com/embed/' + this.videos[this.number].key+'?vq=hd1080';
+                  this.link='https://www.youtube.com/embed/' + this.videos[this.number].key+'?vq=hd720&mute=0';
                   this.name=this.videos[this.number].name;
                   console.log(response.data.results);
 

@@ -185,7 +185,7 @@ nav .right-side .search-box {
 background-color: rgba(17, 17, 17, .8);
 border-radius: 100px;
 }
-ul {
+nav .menu ul {
   display: flex;
 }
 nav .menu ul li {
@@ -253,9 +253,6 @@ nav .menu ul li .menu-link:hover {
   border-radius: .5rem;
 }
 @media (max-width: 50em) {
-  nav {
-    justify-content: center;
-  }
   nav .menu {
     display: none;
   }
@@ -289,6 +286,9 @@ nav .menu ul li .menu-link:hover {
   }
   .mobile-menu ul li a span {
     font-size: .7rem;
+  }
+  nav .right-side .search-box.active .input, nav .right-side .search-box.active .input input {
+    width: 100px;
   }
 }
 /* === BILLBOARD === */
@@ -878,7 +878,7 @@ svg {
 .button-more:hover {
   color: var(--white-color);
 }
-.button-more:hover:before, .button-more:focus:before {
+.button-more:hover:before {
   transform-origin: bottom center;
   -webkit-transform: scale(1, 0);
   transform: scale(1, 0);

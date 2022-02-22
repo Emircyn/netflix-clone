@@ -49,7 +49,7 @@ export default {
           randomMoive:null,
           trend:'/trending/'+this.typeFilm+'/week?',
            baseUrl:'https://api.themoviedb.org/3',
-           apiKey:'api_key=2f0516d4c4cae0ead0b0ee842e6c6da4',
+           apiKey:'api_key='+import.meta.env.VITE_APP_API_KEY,
            imagesUrl:'https://image.tmdb.org/t/p/original',
            randomMoive:null,
            oneMovieImages:null,
@@ -72,7 +72,7 @@ export default {
     }
   },
  created() {
-            
+              
               this.randomMoive = Math.floor(Math.random() * 20);
              
                 axios.get(this.baseUrl+this.trend+this.apiKey)
@@ -94,12 +94,12 @@ export default {
                   this.videos=response.data.results;
               console.log(response.data.results);
               this.picker();
-              this.link='https://www.youtube.com/embed/' + this.videos[this.number].key+'?vq=hd1080&autoplay=1&controls=0&mute=';
-                setTimeout(() => { this.videoplay=true}, 6500);
-                setTimeout(() => { this.show=true }, 7500);
+              this.link='https://www.youtube.com/embed/' + this.videos[this.number].key+'?vq=hd720&autoplay=1&controls=0&mute=';
+                setTimeout(() => { this.videoplay=true}, 4500);
+                setTimeout(() => { this.show=true }, 5500);
                 
                 
-                setTimeout(() => { this.videoplay=false; this.reload=true;this.show=false }, 35000);
+                setTimeout(() => { this.videoplay=false; this.reload=true;this.show=false }, 25000);
 
               
                 
