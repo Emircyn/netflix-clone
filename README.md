@@ -11,7 +11,7 @@
 
 
 ## CSS BY ##
- <a href="https://github.com/viowins">Emre Yaraşır</a>
+ <a href="https://github.com/viowins">VIOVINS</a>
 ## Install ##
 
     $ npm install
