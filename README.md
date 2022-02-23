@@ -10,7 +10,7 @@
 
 
 
-## Css by ##
+## CSS BY ##
  <a href="https://github.com/viowins">Emre Yaraşır</a>
 ## Install ##
 
